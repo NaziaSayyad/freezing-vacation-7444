@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "image": "https://images.bewakoof.com/t640/don-t-follow-me-lightweight-adjustable-strap-women-s-slider-361112-1655814698-3.jpg",
+      "title": "Sliders",
+      "description": "Mr. Men's Lightweight Adjustable  strap ",
+      "price": 329,
+      "rating": 4.5,
+      "id": 2
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/don-t-follow-me-lightweight-adjustable-strap-women-s-slider-361112-1655814698-3.jpg",
+      "title": "Light Weight Sliders",
+      "description": "Don't Follow Me Lightweight Adjustable Strap Women's Slider",
+      "price": 249,
+      "rating": 4.6,
+      "id": 3
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-black-adjustable-velcro-sliders-481910-1655813699-1.jpg",
+      "title": "Light Weight Sliders",
+      "description": "Men's Black Adjustable Velcro Sliders",
+      "price": 499,
+      "rating": 4.5,
+      "id": 4
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/army-camouflage-lightweight-adjustable-strap-men-slider-333613-1655747768-5.jpg",
+      "title": "OFFICIAL MARVEL MERCHANDISE",
+      "description": "Adjustable Strap Men's Slide",
+      "price": 499,
+      "rating": 4.5,
+      "id": 5
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/don-t-follow-me-lightweight-adjustable-strap-women-s-slider-361112-1655814698-3.jpg",
+      "title": "Bewakoof ",
+      "description": "Don't Follow Me Lightweight Adjustable Strap Women's Slider",
+      "price": 249,
+      "rating": 4.6,
+      "id": 6
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/stay-classy-lightweight-adjustable-strap-women-slider-352272-1655748452-5.jpg",
+      "title": "Bewakoof ",
+      "description": "Stay Classy Lightweight Adjustable Strap Women Slider",
+      "price": 449,
+      "rating": 4.7,
+      "id": 7
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/cheeky-goofy-lightweight-adjustable-strap-men-slider-343783-1655814515-5.jpg",
+      "title": "Bewakoof",
+      "description": "Cheeky Goofy Lightweight Adjustable Strap Men Slider",
+      "price": 499,
+      "rating": 4.5,
+      "id": 8
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/surf-dinosaur-lightweight-adjustable-strap-women-slider-330389-1655749633-5.jpg",
+      "title": "Bewakoof",
+      "description": "Surf Dinosaur Lightweight Adjustable Strap Women Slider",
+      "price": 499,
+      "rating": 4.6,
+      "id": 9
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/classic-beige-men-s-zig-zag-slider-459354-1656140409-1.jpg",
+      "title": "Bewakoof",
+      "description": "Classic Beige Men's Zig Zag Slider",
+      "price": 399,
+      "rating": 4.3,
+      "id": 10
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/dont-touch-adjustable-men-s-slider-388150-1656182191-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Dont Touch Adjustable Men's Slider",
+      "price": 249,
+      "rating": 4.7,
+      "id": 11
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="heading"><h1>Sliders  </h1></div>
+    <div id="main">
+        
+        <div id="sidebar">
+            <div id="category">
+                <!-- <select id="filter">
+                    <option value="sortby"> Sort By</option>
+                    <option value="Name">Name</option>
+                    <option value="Descending"> Price : Low To High </option>
+                    <option value="Asceneding"> Price : High To Low </option>
+    
+                </select> -->
+                <div>
+                    <select class="selector">
+                        <option id="sort_name" value="Name"> Category </option>
+                        <option value="discount"> Skin </option>
+                        <option value="Descending"> Hair </option>
+                        <option value="Asceneding">Men's Store</option>
+    
+                    </select>
+                </div>
+                <div >
+                    <select class="static_dropdown">
+                        <option> Price </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Discount </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Avg Coustomer Rating </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Concern  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Hair Type  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Gender  </option>
+                    </select>
+                </div>
+               <div class="static_dropdown">
+                    <select class="static_dropdown">
+                        <option> Formulation  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Color  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Pack Size  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option>Finish  </option>
+                    </select>
+                </div>
+            </div>
+    
+        </div>
+    <div id="products"></div>
+</div>
+</body>
+</html>
+<script>
+   let data = JSON.parse(localStorage.getItem("product_data"));
+  console.log(data);
+  
+   let append_product= ()=>{
+    data.forEach(ele => {
+        console.log(ele);
+        let container = document.getElementById("products");
+
+        let image = document.createElement("img");
+        image.src = ele.image;
+
+        let name = document.createElement("p");
+        name.innerText= ele.title;
+
+        let price = document.createElement("h3");
+        price.innerText = ele.price;
+
+        let des = document.createElement("p");
+        des.innerText = ele.description;
+
+        let rating = document.createElement("p");
+        rating.innerText = `${ele.rating}☆`;
+
+        let div = document.createElement("div");
+
+        div.append(image,name,price,des,rating);
+        container.append(div);
+
+
+    });
+   }
+   append_product(data)
+</script>
