@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./address.css">
+    <script src="https://kit.fontawesome.com/0ede75ce99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="address">
+        <div class="top">
+            <div class="header">
+            <h3 class="heading">Add New Address</h3>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+            <div class="after"></div>
+        </div>
+        <div class="addressForms">
+            <div class="inputsdiv">
+            <form action="" class="form" id="addform">
+                <input type="text" name="name" id="name" placeholder="Full Name" >
+                <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+                <div class="divider"></div>
+                <input type="number" name="pincode" id="pincode" placeholder="Pin Code">
+                <div class="city">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="text" name="state" id="state" placeholder="State">
+                </div>
+                <input type="text" name="Streetadd" id="Streetadd" placeholder="Flat no/Building, Street name">
+                <input type="text" name="area" id="area" placeholder="Area/Locality">
+                <input type="text" name="landmark" id="landmark" placeholder="Landmark (Optional)">
+                <div>
+                    <p class="class1">Save Address As</p>
+                </div>
+                <div class="bottomdiv">
+                    <div class="bottom" onclick="saveHomeAddress(event)">
+                        <input type="radio">
+                        <label for="">Home</label>
+                    </div>
+                    <div class="bottom" onclick="saveOfficeAddress(event)">
+                        <input type="radio">
+                        <label for="">Office</label>
+                    </div>
+                    <div class="bottom" onclick="saveOtherAddress(event)">
+                        <input type="radio">
+                        <label for="">Other</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
+<script src="./address.js"></script>
