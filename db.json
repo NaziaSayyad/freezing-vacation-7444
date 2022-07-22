@@ -1,5 +1,5 @@
 {
-  "products": [
+  "acessories_products": [
     {
       "image": "https://images.bewakoof.com/t640/don-t-follow-me-lightweight-adjustable-strap-women-s-slider-361112-1655814698-3.jpg",
       "title": "Sliders",
@@ -80,5 +80,233 @@
       "rating": 4.7,
       "id": 11
     }
+  ],
+  "mens":[
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-black-placket-print-shirt-352183-1655815621-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Black Chill Aop Shirt",
+      "price": 549,
+      "rating": 5,
+      "id": 1
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-black-boyfriend-fit-jeans-504373-1656146568-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Dont Touch Adjustable Men's Slider",
+      "price": 249,
+      "rating": 4.7,
+      "id": 2
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-chill-aop-shirt-362239-1655816019-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Black Chill Aop Shirt",
+      "price": 599,
+      "rating": 5,
+      "id": 1
+    },{
+      "image": "https://images.bewakoof.com/t640/men-s-solid-sky-yellow-tape-shirt-317828-1655834009-4.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Solid Sky Yellow Tiger Shirt",
+      "price": 499,
+      "rating": 4.5,
+      "id": 2
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/wild-ginger-lapel-half-sleeve-shirt-352212-1656140674-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Wild Gineger Lapel Half Sleeve Shirt",
+      "price": 799,
+      "rating": 4.5,
+      "id": 3
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/floral-rose-white-half-sleeve-shirt-351521-1655750582-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's White half Selive Shirt ",
+      "price": 549,
+      "rating": 5,
+      "id": 4
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/quiet-grey-men-s-jogger-337805-1655821022-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Quiet Grey Men's Jogger ",
+      "price": 699,
+      "rating": 4.5,
+      "id": 5
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-plain-color-block-cargo-joggers-337791-1655814579-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Plain Color Block Cargo Joger",
+      "price": 699,
+      "rating": 5,
+      "id": 6
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-plain-color-block-cargo-joggers-337792-1656143552-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Plain Color Black Cargo Joggers ",
+      "price": 699,
+      "rating": 6,
+      "id": 7
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/light-grey-zipper-jogger-321136-1655751333-5.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Light Grey Jogger ",
+      "price": 899,
+      "rating": 4.4,
+      "id": 8
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-black-anime-printed-joggers-468595-1655817157-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Black Anime Printed Joggers ",
+      "price": 899,
+      "rating": 4.5,
+      "id": 9
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-cut-sew-christmas-joggers-435698-1656140657-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Men's Cut &  Sew Christmas Joggers",
+      "price": 599,
+      "rating": 4.7,
+      "id": 10
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-white-green-premium-sneakers-509639-1655925538-1.JPG",
+      "title": "Mactree",
+      "description": "Men's White & Green Premimum Sneakers ",
+      "price": 744,
+      "rating": 4.5,
+      "id": 11
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-black-grey-premium-sneakers-509666-1655925587-1.JPG",
+      "title": "Mactree",
+      "description": "Men's White & Green Premimum Sneakers ",
+      "price": 799,
+      "rating": 4.5,
+      "id": 12
+    }, {
+      "image": "https://images.bewakoof.com/t640/afrojack-men-s-black-self-design-sneakers-505757-1655816080-1.JPG",
+      "title": "Afrojack",
+      "description": "Men's Black Self  Sneakers ",
+      "price": 799,
+      "rating": 4.5,
+      "id": 13
+    }, 
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-white-sneakers-479841-1655810696-1.jpg",
+      "title": "Woakers",
+      "description": "Men's White Sneakers ",
+      "price": 749,
+      "rating": 4.7,
+      "id": 14
+    }, 
+    {
+      "image": "https://images.bewakoof.com/t640/men-s-black-white-premium-sneakers-509664-1655925581-1.JPG",
+      "title": "Mactree",
+      "description": "Men's White & Green Premimum Sneakers ",
+      "price": 899,
+      "rating": 4.5,
+      "id": 15
+    }
+    
+
+  ],
+  "women":[
+    {
+      "image": "https://images.bewakoof.com/t640/dont-touch-adjustable-men-s-slider-388150-1656182191-1.jpg",
+      "title": "Kotty  ",
+      "description": "Women's Black Boyfriend jeans",
+      "price": 849,
+      "rating": 4.7,
+      "id": 1
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-black-camo-dress-419288-1655820954-1.jpg",
+      "title": "Bewakoof",
+      "description": "Women's Black Cambo Slim Fit Dress",
+      "price": 299,
+      "rating": 4.4,
+      "id": 11
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-blue-slim-fit-high-rise-clean-look-stretchable-jeans-386965-1656146650-1.jpg",
+      "title": "High Start",
+      "description": "Women's Blue slim Fit ",
+      "price": 914,
+      "rating": 4.7,
+      "id": 2
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/freakins-women-black-solid-straight-fit-jeans-451687-1655917714-1.jpg",
+      "title": "Freakings  ",
+      "description": "Women Black solid ",
+      "price": 999,
+      "rating": 4.7,
+      "id": 3
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/high-star-women-s-blue-low-rise-skinny-fit-plus-size-jeans-509367-1656186923-1.jpg",
+      "title": "High Start",
+      "description": "Women's Blue Low Rise Plus Size Jeans",
+      "price": 974,
+      "rating": 4.7,
+      "id": 4
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-blue-relaxed-fit-high-rise-jeans-509304-1656159260-1.jpg",
+      "title": "High Start",
+      "description": "Women's Blue relaxed Fit High Rise Jeans ",
+      "price": 943,
+      "rating": 5,
+      "id": 5
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-black-straight-fit-high-rise-jeans-509292-1655835445-1.jpg",
+      "title": "High Start",
+      "description": "Women's Black Straight Hit High Rise Jeans ",
+      "price": 960,
+      "rating": 4.7,
+      "id": 6
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-blue-tweety-typography-lounge-dress-419539-1655816654-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Women Blue twenty Typrography Lounge Dress",
+      "price": 349,
+      "rating": 5,
+      "id": 10
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-plain-high-neck-pocket-dress-navy-blue-321810-1655748395-6.jpg",
+      "title": "Bewakoof",
+      "description": "Women's Blue High Neck Slim Fit Dress ",
+      "price": 960,
+      "rating": 4,
+      "id": 7
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-blue-slim-fit-high-rise-distressed-jeans-509274-1656148178-1.jpg",
+      "title": "High star",
+      "description": "Women's Black Boyfriend jeans",
+      "price": 859,
+      "rating": 3.7,
+      "id": 8
+    },
+    {
+      "image": "https://images.bewakoof.com/t640/women-s-black-all-over-printed-oversized-dress-467372-1658407241-1.jpg",
+      "title": "Bewakoof ",
+      "description": "Women Black Overall",
+      "price": 899,
+      "rating": 4.7,
+      "id": 9
+    }    
   ]
 }
