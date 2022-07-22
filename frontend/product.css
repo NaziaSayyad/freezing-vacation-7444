@@ -21,13 +21,15 @@ img{
     margin-bottom: 0%;
 }
 #products>div{
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     width: 75%;
     margin-top: 2%;
 }
 #products>div>img{
-    margin-left: 10%;
-    width: 90%;
+    /* margin-left: 10%; */
+    width: 95%;
+    height: 70%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    /* border: 1px solid; */
 }
 #main{
     display: flex;
@@ -69,4 +71,8 @@ select {
     #heading{
         margin-left: 15%;
         margin-top: 5%;
+    }
+    #cat_nav{
+      /* margin-top: 5%; */
+      padding: 15px;
     }
