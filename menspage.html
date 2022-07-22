@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+     #slider{
+        height:500px;
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+     
+    }.slide-img{
+        width:100%;
+        height:400px;
+        background-position: center;
+        background-size: cover;
+        cursor: poiner;
+        display: flex;
+        transition: 0.7s;
+        justify-content: center;
+        align-items: center;
+    }.img-1{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+    }.img-2{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+    }.img-3{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/Screenshot-2022-07-22-123359--1--1658473864.png");
+    }.container{
+        width:100%;
+        margin:auto;
+    }.subcontainer{
+        width:100%;
+        margin:auto
+    }.img-4{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+    }.img-6{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+    }
+    
+    
+    #sliders{
+        margin-top: 30px;
+    }#pop{
+        text-align: center;
+        margin-top: 50px;
+        
+    }#pop>h2{
+        font-family: sans-serif;
+       
+        font-size: 22px;
+        letter-spacing: 2px;
+    }#discount{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:10px;
+      
+    }#discount>div>img{
+        width:100%;
+    }#d>h2{
+        font-family: sans-serif;
+       
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }#bargincounter{
+        display: flex;
+    }#bargincounter>div>img{
+        width:100%;
+    }#e>h2{
+        font-family:sans-serif;
+       
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }#stupidcollection>div>img{
+        width:100%;
+    }#stupidcollection{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap:10px;
+        /* column-gap:-70px; */
+      
+    }#f>h2{
+        font-family: sans-serif;
+     
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }#g>h3{
+        font-family: sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }#box{
+    display: flex;
+   justify-content: center;
+   gap:20px;
+   margin-top: 20px;
+}
+#box>img{
+    width: 110px;
+    height: 150px;
+}#sliders>img{
+    width:100%;
+}#popular{
+    
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+}#popular>div>img{
+    width:100%;
+}#banner1>img{
+    width:100%;
+}#banner2>img{
+    width:100%
+}.slide1-img{
+        width:100%;
+        height:400px;
+        background-position: center;
+        background-size: cover;
+        cursor: poiner;
+        display: flex;
+        transition: 0.7s;
+        justify-content: center;
+        align-items: center;
+    }.img-11{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+    }.img-21{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+    }.img-31{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/Screenshot-2022-07-22-123359--1--1658473864.png");
+    }.container1{
+        width:100%;
+        margin:auto;
+    }.subcontainer1{
+        width:100%;
+        margin:auto
+    }.img-41{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+    }.img-51{
+        background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+    } #slider7{
+        height:200px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+       
+      
+     
+    }.slide7-img7{
+        width:100%;
+        height:200px;
+        background-position: center;
+        background-size: cover;
+        cursor: poiner;
+        display: flex;
+        transition: 0.7s;
+        justify-content: center;
+     
+        }.container7{
+        width:100%;
+        margin:auto;
+      
+      
+        margin-top:-0px ;
+    }.subcontainer7{
+        width:100%;
+     }#controls>button{
+    border-radius: 50px;
+    padding:10px;
+    border: 1px solid transparent;
+   display: flex;
+   cursor: pointer;
+}.slide7{
+ margin:auto;
+        width:120px;
+    justify-content: space-between;
+        }.slide7>p{
+        text-align: center;
+        margin-top: 0px;
+    }#controls{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+    }#j>h3{
+        font-family: sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }.slide7-img7:hover{
+        opacity:0.7;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }#nextpage{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        font-size: 12px;
+       
+    }#nextpage>a{
+        color:rgb(93,179,192)
+    }span{
+      color:grey;
+      text-decoration: line-through;
+    }#sliders{
+        margin-top: -10px;
+    }
+
+</style>
+<body>
+    <div id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="my-slider">
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-1">
+                                 </div>
+                                </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-2">
+
+
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-3">
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-4">
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-6">
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="sliders">
+    <img src="https://images.bewakoof.com/uploads/grid/app/desktop-tod-strip-men-1654149139.jpg" alt="">
+   </div>
+   <div id="box">
+    <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-bestsellers-1657622402.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-new-arrivals-1657622405.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-official-merch-1657622406.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-mobile-covers-1657622404.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-mobile-grippers-1657622404.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-sliders-1657622407.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-mugs-1657622405.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-customisation-1657622403.jpg" alt="">
+   <img src="https://images.bewakoof.com/uploads/grid/app/vote-thumbnail-1657631916.jpg" alt="">
+
+</div>
+   <div id="pop">  <h2>POPULAR CATEGORIES</h2></div>
+ 
+   <div id="popular">
+
+   </div>
+
+   
+   <div id="d"><h2>DISCOUNT PE DISCOUNT</h2></div>
+   <div id="discount">
+
+   </div>
+   <div id="j">
+    <h3>BEST SELLERS FOR MAN</h3>
+   </div>
+   <div id="controls">
+    <button id="previous"><</button>
+   
+    <button id="next">></button>
+</div>
+<div id="slider7">
+<div class="container7">
+    <div class="subcontainer7">
+        <div class="slide-wrapper7">
+           <div class="my-slider7">
+             <div>
+                   <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                     <img src="https://images.bewakoof.com/t320/men-s-red-be-a-human-t-shirt-343165-1655820980-4.jpg" alt="">
+                     </div>
+                    <p>299 <span>2000</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          <img src="https://images.bewakoof.com/t320/men-s-black-iron-man-arc-reactor-t-shirt-472724-1656138794-1.jpg" alt="">
+                       </div>
+                        <p>350 <span>1500</span></p>
+                    </div>
+                </div>
+               
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7 img-1" >
+                          <img src="https://images.bewakoof.com/t320/men-s-black-t-shirt-106-1655745629-5.jpg" alt="">
+                       
+                        </div>
+                        <p>250 <span>1999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7 img-1" >
+                          <img src="https://images.bewakoof.com/t320/men-s-full-sleeve-t-shirts-1094-1655746804-1.jpg" alt="">
+                       
+                        </div>
+                        <p>250 <span>2500</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          <img src="https://images.bewakoof.com/t320/meteor-grey-full-sleeve-t-shirt-211959-1655747957-1.jpg" alt="">
+                       
+                        </div>
+                        <p>350 <span>1500</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          <img src="https://images.bewakoof.com/t320/load-game-adjustable-strap-men-slider-373620-1656138694-1.jpg" alt="">
+                       
+                        </div>
+                        <p>150 <span>2999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7 img-1" >
+                          <img src="https://images.bewakoof.com/t320/men-s-red-t-shirt-183125-1655747740-1.jpg" alt="">
+                       
+                        </div>
+                        <p>250 <span>1999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          <img src="https://images.bewakoof.com/t320/men-s-blue-t-shirt-271438-1655748128-1.jpg" alt="">
+                       
+                        </div>
+                        <p>350 <span>1500</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                            <img src="https://images.bewakoof.com/t320/men-s-red-be-a-human-t-shirt-343165-1655820980-4.jpg" alt="">
+                          
+                       
+                        </div>
+                        <p>250 <span>1999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                            <img src="https://images.bewakoof.com/t320/men-s-full-sleeve-t-shirts-1094-1655746804-1.jpg" alt="">
+                          
+                       
+                        </div>
+                        <p>150 <span>2999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          
+                            <img src="https://images.bewakoof.com/t320/load-game-adjustable-strap-men-slider-373620-1656138694-1.jpg" alt="">
+                        </div>
+                        <p>200 <span>1999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                          
+                            <img src="https://images.bewakoof.com/t320/meteor-grey-full-sleeve-t-shirt-211959-1655747957-1.jpg" alt="">
+                        </div>
+                        <p>350 <span>1500</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                            <img src="https://images.bewakoof.com/t320/men-s-red-be-a-human-t-shirt-343165-1655820980-4.jpg" alt="">
+                       
+                        </div>
+                        <p>150 <span>2999</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide7">
+                        <div class="slide7-img7  img-1" >
+                            <img src="https://images.bewakoof.com/t320/men-s-red-t-shirt-183125-1655747740-1.jpg" alt="">
+                       
+                        </div>
+                        <p>200 <span>1999</span></p>
+                    </div>
+                </div>
+               
+               
+            </div>
+                    
+                   
+                
+               
+            </div>
+         
+        </div>
+    </div>
+</div>
+<div id="nextpage"><a  href="Viewall">VIEW All</a></div>
+
+
+
+
+
+   <!--              second main sliding part            -->
+  
+  
+   <div id="slider1">
+    <div class="container1">
+        <div class="subcontainer1">
+            <div class="slider-wrapper1">
+                <div class="my-slider1">
+                    <div>
+                        <div class="slide1">
+                            <div class="slide-img img-11">
+                             </div>
+                            </div>
+                    </div>
+                    <div>
+                        <div class="slide1">
+                            <div class="slide-img img-21">
+
+
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide1">
+                            <div class="slide-img img-31">
+
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide1">
+                            <div class="slide-img img-41">
+
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide1">
+                            <div class="slide-img img-51">
+
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div>
+    <!-- best sellers for man sliding part
+    
+    
+    
+    
+    -->
+   </div>
+  
+<div id="e"><h2>BEST BARGAIN CORNER</h2></div>
+<div id="bargincounter">
+
+</div>
+
+</div>
+<div id="f"><h2>THE STUPID COLLECTION</h2></div>
+<div id="stupidcollection">
+    
+</div>
+<div id="banner1">
+    <img src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png
+    " alt="">
+</div>
+<div id="g"><h3>Custmize your T-shirts</h3></div>
+<div id="banner2">
+    <img src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif
+    " alt="">
+</div>
+
+</body>
+</html>
+<script src="./mens.js"></script>
