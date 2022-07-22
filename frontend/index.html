@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home </title>
+    <style>
+        #pages_btn >a{
+            margin-bottom: 5%;
+            margin-left: 5%;
+        }
+        #pages_btn{
+            margin-bottom: 10%;
+        }
+    </style>
 </head>
 <body>
+    <h1> Data making page </h1>
+    <div id="pages_btn">
+        <h1> All three pages ||</h1>
+        <a href="acessories.html"> Accessories</a>
+    <a href="men.html"> Men </a>
+    <a href="women.html"> Women </a>
+    
+    </div>
     <div id="add_item">
         <input type="text" placeholder="Image url" id="image"> <br><br>
         <input type="text" placeholder="Title" id="title"> <br><br>
@@ -43,7 +60,7 @@ class addProduct {
         this.price = +price;
         this.rating = +rating;
     
-        fetch('http://127.0.0.1:3000/api/products',{
+        fetch('http://127.0.0.1:5500/db.json',{
             method:"POST",
             body : JSON.stringify(data),
             headers:{
@@ -66,14 +83,14 @@ let add_item =()=>{
     let rating = document.getElementById('rating').value;
     data = new addProduct(image,title,description,price,rating)
     data.adminAddItem(image,title,description,price,rating);
+    console.log("data:=",data)
 
 }
-
 // delete function 
 let delete_fun = async ()=>{
     
     let id = document.getElementById('del_id').value;
-    let url = `http://127.0.0.1:3000/api/products/${id}`;
+    let url = `http://127.0.0.1:5500/db.json/${id}`;
     
 
     let res = await fetch(url,{
@@ -88,13 +105,32 @@ let delete_fun = async ()=>{
     console.log(data)
 }
 //sending data to local storage for appending the data..
-let store_data= async () =>{
-    let url ='http://127.0.0.1:3000/api/products'
+let store_acces_data= async () =>{
+    let url ='http://127.0.0.1:5500/db.json'
     let res =  await fetch(url);
     let dt = await res.json();
-    localStorage.setItem("product_data",JSON.stringify(dt))
-    console.log("data",dt);
+    localStorage.setItem("acessories_data",JSON.stringify(dt.acessories_products))
+    console.log("complete data:",dt)
+    console.log("accessories:",dt.acessories_products);
+    
 }
-store_data();
+store_acces_data();
 
+let store_man_data = async()=>{
+    let url ='http://127.0.0.1:5500/db.json'
+    let res =  await fetch(url);
+    let dt = await res.json();
+    localStorage.setItem("mens_data",JSON.stringify(dt.mens))
+   console.log("mens _data :",dt.mens);
+}
+store_man_data();
+
+let store_women_data= async ()=>{
+    let url ='http://127.0.0.1:5500/db.json'
+    let res =  await fetch(url);
+    let dt = await res.json();
+    localStorage.setItem("women_data",JSON.stringify(dt.women))
+    console.log("women _data :",dt.women);
+}
+store_women_data();
 </script>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="heading"><h1> Men Products  </h1></div>
+    <div id="main">
+        
+        <div id="sidebar">
+            <div id="category">
+                <select id="filter">
+                    <option value="sortby"> Sort By</option>
+                    <option value="Name">Name</option>
+                    <option value="Descending"> Price : Low To High </option>
+                    <option value="Asceneding"> Price : High To Low </option>
+    
+                </select>
+                <div>
+                    <select class="selector">
+                        <option value="Name"> Gender </option>
+                        <option value="men">  Men </option>
+                        <option value="women">  Women </option>
+                       
+    
+                    </select>
+                </div>
+                <div >
+                    <select class="static_dropdown">
+                        <option> Category </option>
+                        <option value="acess"> Acessories</option>
+                    </select>
+                </div>
+                <div >
+                    <select class="static_dropdown">
+                        <option> Price </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Discount </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Avg Coustomer Rating </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Concern  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Hair Type  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Gender  </option>
+                    </select>
+                </div>
+               <div class="static_dropdown">
+                    <select class="static_dropdown">
+                        <option> Formulation  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Color  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option> Pack Size  </option>
+                    </select>
+                </div>
+                <div>
+                    <select class="static_dropdown">
+                        <option>Finish  </option>
+                    </select>
+                </div>
+            </div>
+    
+        </div>
+    <div id="products"></div>
+</div>
+</body>
+</html>
+<script>
+   let data = JSON.parse(localStorage.getItem("mens_data"));
+  console.log(data);
+  
+   let append_product= ()=>{
+    let container = document.getElementById("products");
+    container.innerHTML=null;
+    data.forEach(ele => {
+        console.log(ele);
+        
+        let image = document.createElement("img");
+        image.src = ele.image;
+
+        let name = document.createElement("p");
+        name.innerText= ele.title;
+
+        let price = document.createElement("h3");
+        price.innerText = ele.price;
+
+        let des = document.createElement("p");
+        des.innerText = ele.description;
+
+        let rating = document.createElement("p");
+        rating.innerText = `${ele.rating}☆`;
+
+        let div = document.createElement("div");
+        div.addEventListener("click",function(){
+            add_cart(ele);
+        })
+
+        div.append(image,name,price,des,rating);
+        container.append(div);
+
+
+    });
+   }
+   append_product(data);
+   let add_cart =(ele)=>{
+    localStorage.setItem("cart_product",JSON.stringify(ele));
+    window.location.href = "cart_product.html";
+    console.log("cart value:",ele)
+   }
+   document.querySelector("#filter").addEventListener("change",changing);
+let cartLS=JSON.parse(localStorage.getItem("cartPage")) || []
+
+function changing(){
+    let selected = document.querySelector("#filter").value;
+   
+    if(selected=="Name"){
+        //console.log(selected)
+        //console.log(product_data)
+        data.sort(function(a,b){
+            //console.log(a.name)
+            if (a.title > b.title) {
+              return 1;
+            }
+            if (a.title < b.title) {
+              return -1;
+            }
+           return 0;
+          })
+       
+       append_product(data);
+    }
+    if(selected=="Descending")
+    {
+        data.sort(function(a,b){
+            if(a.price>b.price)return 1
+            if(a.price<b.price)return -1
+            return 0
+        })
+        append_product(data);
+    }
+
+    if(selected=="Asceneding")
+    {
+        data.sort(function(a,b){
+            if(a.price>b.price)return -1
+            if(a.price<b.price)return 1
+            return 0
+        })
+        append_product(data);
+
+}
+}
+
+document.querySelector(".selector").addEventListener("change",change_cat);
+
+function change_cat(){
+    let selected = document.querySelector(".selector").value;
+    console.log(selected);
+    if(selected=='men'){
+        window.location.href="men.html";
+    }
+    if(selected=='women'){
+        window.location.href ="women.html";
+    }
+    if(selected=='acess'){
+        window.location.href ="accessories.html";
+    }
+
+}
+</script>
