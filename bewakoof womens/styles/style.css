@@ -4,71 +4,151 @@
 
 /***************                sliding style                ******************* */
 
-.slide>img{
-    width:430px;
-    height: 450px;
-    cursor: pointer;
-}.slides{
+#slider{
+    height:500px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+ 
+}.slide-img{
+    width:100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    cursor: poiner;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+}.img-1{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/bbuy2joggers-common-1658473862.gif");
+}.img-2{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/b1g1-women-new-1658468283.jpg");
+}.img-3{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/weekend-sale-women-new-1658468289.jpg");
+}.container{
+    width:100%;
+    margin:auto;
+}.subcontainer{
+    width:100%;
+    margin:auto
+}.img-4{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/bf-tee-women-1658468286.jpg");
+}.img-6{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+}
+
+
+/**************************        Bestseller slider          *****************/
+.product-container{
     display:flex;
-    gap:30px
-}
-   
-#bestsellersWomen{
-    height: auto;
-    width: 98%;
-    /* border: 1px solid red; */
-    display: flex;
-    gap: 20px;
-    /* overflow-x: auto; */
-}
-.slider-prod{
-    display: block;
-    gap: 30px;
-    /* border: 1px solid black; */
-    cursor: pointer;
-    position: relative;
-}
-.slideImg >img{
-    width: 100%;
-}
-.price{
-    display: flex;
-    padding: 0 20px;
-    gap: 10px;
-    font-size: 20px
-}
-.price>div:nth-child(2){
-    color: gray;
-    font-size: 12px;
-    margin-top: 4px;
-    text-decoration: line-through;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     
-}
-
-.prev-btn,
-.next-btn{
-    /* position: absolute; */
-    text-align: center;
-    color: rgb(169, 162, 162);
-    width: 50px;
-    height: 50px;
-    /* border: 1px solid red; */
-    font-size: 40px;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 8rem;
+    margin-top: 50px;
+ 
+ }
+ .product-container::-webkit-scrollbar{
+     display:none; 
+ }
+ .product-card{
+    flex:0 0 auto;
+    width:260px;
+    height:auto;
+   margin-right: 17px;
+   padding-left: 15px;
+   align-items: center;
     
-}
 
-.prev-btn:hover,
-.next-btn:hover{
-    background-color: white;
-    opacity: 0.23;
-    color: black;
-}
+
+ }
+
+ .product-card:hover{
+    transform: scale(1.5);
+ }
+ .product-img{
+    /* position: relative; */
+    width:100%;
+     
+    overflow:hidden;
+ 
+ }
+  
+ 
+ .pre-btn,
+ .next-btn{
+     border: none;
+   display: block;
+    position:absolute;
+   float: center;
+    z-index:100;
+    margin-top:200px;
+     cursor:pointer;
+     padding: 17px;
+    font-weight: bold;
+    background-color: hsla(0,0%,100%,.5);
+     font-size: 12px;
+     color: #000;
+ }
+ 
+ .pre-btn{
+    left:0;
+     
+ }
+ .next-btn{
+    right:0;
+     
+ 
+ }
+ .product-img p{
+     font-family: montserrat-semibold,sans-serif!important;
+     font-size: 16px!important;
+     line-height: 14px!important;
+ }
+
 #slide_cont{
     display: flex;
 
+}
+
+
+
+/* ****************               sliding style End            ******************** */
+
+
+.slide1-img{
+    width:100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    cursor: poiner;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+}
+.img-11{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/clearance-women---Copy-1658475317.jpg");
+}
+.img-21{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/Static-JustArrived-Disney-women-1658250093.gif");
+}
+.img-31{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/minion-homepage-women-1658140993.jpg");
+}
+.container1{
+    width:100%;
+    margin:auto;
+}
+.subcontainer1{
+    width:100%;
+    margin:auto
+}
+.img-41{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/bbuy2joggers-common-1658473862.gif");
+}
+.img-51{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
 }
 
 
@@ -162,6 +242,17 @@ h2{
     /* border: 1px solid black; */
     cursor: pointer;
     /* position: relative; */
+}
+.price{
+    display: flex;
+    gap: 10px;
+}
+.price>div:nth-child(2){
+    text-decoration: line-through;
+    color: grey;
+}
+.slideImg>img{
+    width: 100%;
 }
 
 .last1>img{

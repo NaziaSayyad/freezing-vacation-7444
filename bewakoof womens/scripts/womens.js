@@ -1,64 +1,77 @@
 // alert("hii")
-let slideContainer = document.querySelector(".container");
-let slide = document.querySelector(".slides");
-let slides = document.querySelectorAll(".slide");
-
-let delay = 5000;
-let index = 1;
-
-let firstClone = slides[0].cloneNode(true)
-let lastClone = slides[slides.length - 1].cloneNode(true)
-let last1clone = slides[slides.length - 2].cloneNode(true)
-let last2clone = slides[slides.length - 3].cloneNode(true)
-
-firstClone.id = "first-clone"
-lastClone.id = "last-clone"
-last1clone.id = "sec-last"
-last2clone.id = "ok"
-
-
-slide.append(firstClone)
-slide.prepend(lastClone)
-slide.append(last1clone)
-slide.append(last2clone)
-
-
-let SlideWidth = slides[index].clientWidth
-console.log(SlideWidth)
-// slide.style.transform=`translate(${-SlideWidth*index}px)`
-console.log(slide.style.transform)
-let startslide = () => {
-    setInterval(() => {
-        index++
-        slide.style.transform = `translateX(${-SlideWidth * index}px)`
-        slide.style.transition = `.7s`
-    }, delay)
-}
-startslide()
-slide.addEventListener("transitionend", () => {
-    slides = document.querySelectorAll(".slide");
-    if (slides[index].id == firstClone.id) {
-        slide.style.transition = `none`
-        index = 1
-        slide.style.transform = `translateX(${-SlideWidth * index}px)`
+let slider=tns({
+    container:".my-slider",
+    "slideBy":"1",
+    "speed":800,
+    "nav":false,
+    autoplay:true,
+    controls:false,
+    autoplayButtonOutput:false,
+   
+    
+    responsive:{
+  1400:{
+  items:3,
+  gutter:20,
+  },
+  1024:{
+  items:3,
+  gutter:20
+  },768:{
+  items:3,
+  gutter:20
+  }
     }
-    if (slides[index].id == laststClone.id) {
-        slide.style.transition = `none`
-        index = slides.length - 2
-        slide.style.transform = `translateX(${-SlideWidth * index}px)`
-    }
+  })
+
+// -----------------------         bestSeller slider       -----------------//
+
+var productContainer=document.querySelectorAll('.product-container');
+var nxtBtn=document.querySelectorAll( '.next-btn');
+var preBtn=document.querySelectorAll( '.pre-btn');
+
+
+productContainer.forEach((item,i)=>{
+    var contDimensions=item.getBoundingClientRect();
+    var contwidth=contDimensions.width;
+    nxtBtn[i].addEventListener("click",()=>{
+        item.scrollLeft +=contwidth;
+        
+    })
+    preBtn[i].addEventListener('click',()=>{
+       item.scrollLeft -=contwidth;
+    })
+    
 })
 
 
 // -----------------------         bestSeller slider       -----------------//
 
-var sliderMain=document.getElementById("bestsellersWomen");
-    var item=sliderMain.getElementsByClassName("slider-prod");
-    function next()
-    {
-        sliderMain.append(item[0]);
+
+let slider1=tns({
+    container:".my-slider1",
+    "slideBy":"1",
+    "speed":800,
+    "nav":false,
+    autoplay:true,
+    controls:false,
+    autoplayButtonOutput:false,
+   
+    
+    responsive:{
+  1400:{
+  items:3,
+  gutter:20,
+  },
+  1024:{
+  items:3,
+  gutter:20
+  },768:{
+  items:2,
+  gutter:20
+  },480:{
+    items:2,
+    gutter:20
+  }
     }
-    function prev()
-    {
-        sliderMain.prepend(item[item.length-1])
-    }
+  })
