@@ -1,0 +1,254 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+ #slider{
+    height:500px;
+    margin-top: -65px;
+    display: flex;
+    /* justify-content: center; */
+ 
+}.slide-img{
+    width:100%;
+    height:400px;
+    /* background-position: center; */
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.img-1{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+}.img-2{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+}.img-3{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/Screenshot-2022-07-22-123359--1--1658473864.png");
+}.container{
+    width:100%;
+    margin:auto;
+}.subcontainer{
+    width:100%;
+    margin:auto
+}.img-4{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+}.img-6{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+}
+
+
+#sliders12{
+    margin-top: 0px;
+}#pop{
+    text-align: center;
+    margin-top: 50px;
+    
+}#pop>h2{
+    font-family: sans-serif;
+   
+    font-size: 22px;
+    letter-spacing: 2px;
+}#discount{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+  
+}#discount>div>img{
+    width:100%;
+}#d>h2{
+    font-family: sans-serif;
+   
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}#bargincounter{
+    display: flex;
+}#bargincounter>div>img{
+    width:100%;
+}#e>h2{
+    font-family:sans-serif;
+   
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}#stupidcollection>div>img{
+    width:100%;
+}#stupidcollection{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap:10px;
+    /* column-gap:-70px; */
+  
+}#f>h2{
+    font-family: sans-serif;
+ 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 22px;
+}#g>h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}#box12{
+display: flex;
+justify-content: center;
+gap:20px;
+margin-top: 20px;
+}
+#box12>img{
+width: 110px;
+height: 150px;
+}#sliders12>img{
+width:100%;
+}#popular{
+
+display:grid;
+grid-template-columns: repeat(6,1fr);
+grid-template-rows: repeat(2,1fr);
+}#popular>div>img{
+width:100%;
+cursor: pointer;
+}#banner1>img{
+width:100%;
+}#banner2>img{
+width:100%
+}.slide1-img{
+    width:100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    cursor: poiner;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.img-11{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+}.img-21{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+}.img-31{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/Screenshot-2022-07-22-123359--1--1658473864.png");
+}.container1{
+    width:100%;
+    margin:auto;
+}.subcontainer1{
+    width:100%;
+    margin:auto
+}.img-41{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/happy-weekend-sale-live-banner-men-1658416183.jpg");
+}.img-51{
+    background-image: url("https://images.bewakoof.com/uploads/grid/app/1x1-bbuy3899-common-1658473862.jpg");
+} #slider7{
+    height:200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -30px;
+   
+  
+ 
+}.slide7-img7{
+  
+    height:200px;
+    background-position: center;
+    background-size: cover;
+    cursor: poiner;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+ 
+    }.container7{
+    width:100%;
+  
+    margin:auto;
+  
+  
+    margin-top:-0px ;
+}.subcontainer7{
+    width:100%;
+    
+ }#controls>button{
+    border: none;
+    display: block;
+     position:absolute;
+    float: center;
+     z-index:100;
+     margin-top:150px;
+      cursor:pointer;
+      padding: 17px;
+     font-weight: bold;
+     background-color: hsla(0,0%,100%,.5);
+      font-size: 12px;
+      color: #000;
+}.slide7{
+margin:auto;
+    width:120px;
+    height: 250px;
+height:400px;
+justify-content: space-between;
+    }.slide7>p{
+    text-align: center;
+    margin-top: 0px;
+}#controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80px;
+}#j>h3{
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}.slide7-img7:hover{
+    opacity:0.7;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   
+}.slide7-img7 >img{
+   height: 200px;
+}
+
+
+#nextpage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+   
+}#nextpage>a{
+    color:rgb(93,179,192)
+}span{
+  color:grey;
+  text-decoration: line-through;
+}#sliders{
+    margin-top: -10px;
+}#miniDiv{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 0px 0px 0px;
+}
+
+#miniDiv > div > img{
+    width: 80%;
+}#previous{
+    left:0
+}#next{
+    right:0
+}
