@@ -19,12 +19,12 @@
     /* border: 1px solid red; */
     display: flex;
     gap: 20px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 .slider-prod{
     display: block;
     gap: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     cursor: pointer;
     position: relative;
 }
@@ -45,13 +45,14 @@
     
 }
 
-.prev-btn,.next-btn{
+.prev-btn,
+.next-btn{
     /* position: absolute; */
     text-align: center;
     color: rgb(169, 162, 162);
     width: 50px;
     height: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 40px;
     display: inline-block;
     cursor: pointer;
@@ -59,7 +60,8 @@
     
 }
 
-#prev-btn:hover, #next-btn:hover{
+.prev-btn:hover,
+.next-btn:hover{
     background-color: white;
     opacity: 0.23;
     color: black;
@@ -71,9 +73,13 @@
 
 
 
-
-
 /* ****************               sliding style End            ******************** */
+
+h2{
+   text-align: center;
+   font-family: sans-serif; 
+}
+
 #beCrazy{
     margin-top: 50px;
     margin: auto;
@@ -113,4 +119,57 @@
 }
 #discount>div>img{
     width: 100%;
+}
+
+#bargain{
+    display: flex;
+    gap: 20px;
+}
+
+#bargain>div>img{
+    width: 100%;
+}
+
+.view-all{
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+#collections{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#collections>div>img{
+    width: 100%;
+}
+
+#clearence{
+    height: auto;
+    width: 98%;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.cleared-prod{
+    display: block;
+    gap: 30px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.last1>img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.last2>img{
+    width: 100%;
+    margin-top: 10px;
 }
