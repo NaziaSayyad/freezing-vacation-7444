@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0ede75ce99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+</head>
+<style>
+
+    body{
+        background-image: linear-gradient(0deg,#fff4c4,#fff);
+    }
+   
+</style>
+<body>
+    <div id="container"></div>
+    <div class="cont">
+       <div class="first">
+         <h2>Welcome to the world of Bewakoof!</h2>
+         <img src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="">
+
+       </div>
+
+        <div class="second">
+            <div class="head">
+                <h1>Log in / Sign up</h1>
+                <p>for Latest trends, exciting offers and everything Bewakoof!</p>
+            </div>
+            
+        
+         <div class="shead">
+
+            <input type="text" id="input" placeholder="Enter Mobile Number">
+            <button id="button">CONTINUE</button>
+ 
+           <hr> OR
+ 
+               
+
+            <div class="login">
+                <button> <a href="signup.html">CNTINUE WITH EMAIL</a></button>
+                <div class="clogin">
+                    <button>GOOGLE</button>
+                    <button>FACEBOOK</button>
+                </div>
+            </div>
+            <p id="p">By creating an account or logging in, you agree with Bewakoof's Terms and Conditions and Privacy Policy.</p>
+         </div>
+
+       </div>
+ 
+
+    </div>
+</body>
+</html>
+<script type="module">
+
+
+import{navbar} from "./scripts/navbar.js"
+    document.getElementById("container").innerHTML=navbar()
+    let u=JSON.parse(localStorage.getItem("uname"));
+    
+    let arr=JSON.parse(localStorage.getItem("B-user"));
+    document.getElementById("button").addEventListener("click", login);
+
+    function login(){
+        arr.forEach(function(el){
+          if(el.mobile==document.getElementById("input").value){
+           alert("Login Success")
+            localStorage.setItem("uname",JSON.stringify(el))
+
+           
+          }
+          
+
+        })
+        window,location.reload();
+        
+    }
+   
+document.getElementById("apnd").innerHTML=u.name;
+   
+   
+   
+    
+</script>

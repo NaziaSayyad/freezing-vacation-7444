@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0ede75ce99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+    
+</head>
+<style>
+    body{
+        background-image: linear-gradient(0deg,#fff4c4,#fff);
+        height: 100%;
+        
+    }
+     
+
+</style>
+<body>
+    <div id="container"></div>
+    <div class="c">
+       <div class="f">
+          
+         <img   src=" https://images.bewakoof.com/web/desktop-sign-up-banner--1623760676.png" alt="">
+
+       </div>
+
+        
+            <div class="s">
+                <h1>Sign Up</h1>
+                <p >Hi new buddy, let's get you started with the bewakoofi! </p>
+
+                <p id="alrt"></p>
+            
+          <form id="form">
+            <input  id="name" type="text" placeholder="Name">
+            <input id="mobile" type="text" placeholder="Mobile">
+            <input id="email" type="text" placeholder="Email id">
+            <input id="password" type="password" placeholder="Password">
+
+            
+            
+            <div class="in" style="border:none ;">
+                <input type="checkbox" id="checkbox"  >
+                <label for="checkbox">I want to receive order updates on Whatsapp</label><br>  
+            </div>
+            
+            <button id="butn">CONTINUE</button>
+          </form>
+          
+       </div>
+ 
+
+    </div>
+</body>
+</html>
+<script type="module">
+import{navbar} from "./scripts/navbar.js"
+    document.getElementById("container").innerHTML=navbar()
+    let arr=JSON.parse(localStorage.getItem("B-user"))||[];
+    document.getElementById("butn").addEventListener("click", signup);
+  
+     function signup(){
+
+      let obj={
+        name:form.name.value,
+        mobile:form.mobile.value,
+        email:form.email.value,
+        password:form.password.value,
+       
+
+       }
+       if(obj.name==""||obj.mobile==""||obj.email==""||obj.password==""){
+            
+        localStorage.setItem("B-user",JSON.stringify(arr));
+        alert("Please fill all info!")
+       document.getElementById("alrt").innerHTML="Opps!";
+       document.getElementById("alrt").style.color="red";
+      
+       }
+       else{ 
+        arr.push(obj);
+       
+       window.location.href="login.html"
+      
+       }
+       
+       
+
+     }
+
+    
+    
+
+</script>
