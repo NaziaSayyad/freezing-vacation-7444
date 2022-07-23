@@ -1,55 +1,51 @@
+body{
+    min-width: 769px;
+    font-family: montserrat-bold,sans-serif;
+}
+button{
+    cursor: pointer;
+}
 .whishlist{
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 .cartcount{
-    font-family: montserrat-bold,sans-serif;
-    font-size: 9px;
-    width: 15px;
-    height: 15px;
-    color: #fff;
-    top: 14px;
-    right: 4px;
-    padding-top: 1.5px;
-    display: block;
-    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    font-size: smaller;
+    background-color: rgb(245, 206, 33);
     border-radius: 50%;
     text-align: center;
-    padding: 0;
-    line-height: 1.4;
-    text-align: center;
-    padding: 0;
+    position: absolute;
 }
 .cartlogo{
     height: 24px;
     width: 24px;
+    position: relative;
 }
 a:focus, a:hover {
     color: rgba(0,0,0,.9);
 }
 a{
-margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     outline: none;
 }
-cartlogodiv{
+.cartlogodiv{
     text-align: right;
-    position: absolute;
     top: 0;
     right: 8px;
+    justify-content: center;
+    
 }
 .icondiv{
-    width: calc(100% - 190px);
+    width: 100%;
     color: #000;
 }
 .header{
@@ -62,14 +58,14 @@ cartlogodiv{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .cartlogodiv2{
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
     text-align: right;
-    position: absolute;
+    justify-content: flex-end;
     top: 0;
     right: 8px;
-    text-align: right;
-    position: absolute;
-    top: 0;
-    right: 8px;
+   position: relative;
 }
 
 .title{
@@ -81,4 +77,106 @@ cartlogodiv{
     letter-spacing: 2px;
     font-weight: bolder;
     padding-left: 10px;
+}
+#container{
+    width: 25%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    gap: 20px;
+}
+.item{
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.movetobag{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    height: 35px;
+    line-height: 35px;
+    justify-content: center;
+}
+
+.container img{
+   width: 190.25px;
+   height: 237.81px;
+   cursor: pointer;
+   
+}
+#container2{
+    width: 100%;
+    margin-top: 30px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.emptyWishlist{
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.emptyWishlist img{
+    justify-content: center;
+    width: 150px;
+    height: 189px;
+}
+.continueShop{
+    font-size: larger;
+    font-weight: bold;
+    width: 40%;
+    padding: 15px 0 15px 0;
+    border: 2px solid;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px 0 10px;
+    color: #51cccc
+}
+#container2 p{
+    font-size: 18px;
+}
+#container2 .divider{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 1px;
+    background-color: rgb(201, 181, 181);
+    margin-top: 30px;
+}
+.try{
+    color: #ccc;
+}
+.bottomdiv{
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    gap: 30px;
+}
+.bottomdiv table{
+    width: 50%;
+    text-align: center;
+    margin-left: 30px;
+    
+}
+.bottomdiv p{
+    width: 50%;
+    text-align: center;
+    margin-left: 30px;
+    line-height: 10px;
+    
+}
+td{
+    color: #51cccc;
 }
