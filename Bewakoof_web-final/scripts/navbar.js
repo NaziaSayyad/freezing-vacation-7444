@@ -185,11 +185,22 @@ function navbar(){
         <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
     </div>
   </div>
-  
+
 
 </div>
 
+
 </div>
+
+
+<div id="beta">
+<a href="index.html">MEN</a>
+<a href="">WOMEN</a>
+<a href="acc.html">ACCESSORIES</a>
+
+</div>
+
+
 </div>
 
 `

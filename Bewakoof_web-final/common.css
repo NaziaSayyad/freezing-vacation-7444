@@ -3,12 +3,38 @@
     font-family: montserrat,sans-serif;
     }
     /* navbar */
+    #beta{
+        display: flex;
+        
+        color:black;
+       
+        width:100%;
+         
+        align-items: center;
+         justify-content:center;
+     
+       }
+        #beta a{
+          text-decoration: none;
+           font-family: montserrat,sans-serif;
+           font-weight: 500;
+         font-size: 17px;
+         display: block;
+         color: #0e0e0e;
+         letter-spacing: .07px;
+         line-height: 13px;
+         padding: 21px 24px;
+         width: fit-content;
+         
+        
+        }
 #navbar-box{
     position:fixed;
     width:100%;
     top:0;
     left:0;
     z-index: 200;
+    background: #fff;
 }
 .top{
     width:100%;
@@ -407,34 +433,34 @@ border-radius: 5px;
 }
 
  /* --------footer--------- */
- #footer-bag{
+ #footer-baga{
     background: #181818;
     padding: 85px 5px 0px 5px;
     width:100%;
     left: 0;
  }
- #ylogo{
+ #footer-baga #ylogo{
     margin-bottom:60px;
     width:80%;
     margin: auto;
     margin-bottom:20px;
   }
    
-  #ylogo img{
+  #footer-baga #ylogo img{
      width:50px;
      
   }
 
- #niche{
+  #footer-baga #niche{
        
      padding:50px 0px 0px ;
     
     
     
 }
- .footer{
+#footer-baga .footera{
     
-    display:flex;
+    display:grid;
     grid-template-columns: repeat(4,1fr);
     width:80%;
     margin:auto;
@@ -442,21 +468,21 @@ border-radius: 5px;
     
     
   }
-  .footer div{
+  #footer-baga .footera div{
       
      width:100%;
      text-align: left;
       
      
   }
-  .footer P{
+  #footer-baga 
     font: size 18px;
     font-weight: bold;
     line-height: 10px;
     
      
   }
-  .footer h3{
+  #footer-baga .footera h3{
     color: #fdd835;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -464,7 +490,7 @@ border-radius: 5px;
     font-size: 12px;
     font-weight: bold;
   }
- #platstore img{
+  #footer-baga #platstore img{
     width:100%;
     display: block;
      
@@ -475,18 +501,18 @@ border-radius: 5px;
     align-items: center;
     
  }
- #platstore a{
+ #footer-baga #platstore a{
     
     padding-right:8px;
     text-decoration:none;
     border:none;
     
  }
- #khoj{
+ #footer-baga #khoj{
     display:flex;
     
  }
- #khoj input{
+ #footer-baga #khoj input{
     outline: none;
     background: transparent;
     border: none;
@@ -510,7 +536,7 @@ border-radius: 5px;
     
      
  }
- .footer h4 {
+ .footera h4 {
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -532,11 +558,13 @@ border-radius: 5px;
     line-height: 18px;
     color: hsla(0,0%,100%,.9);
   }
-  #hr{
+  #hawa{
  
-    margin-top: 20px;
     border-top: 2px solid #979797;
     width:80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
      
     
 

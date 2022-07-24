@@ -118,11 +118,8 @@ grid-template-rows: repeat(2,1fr);
 }#popular>div>img{
 width:100%;
 cursor: pointer;
-}#banner1>img{
-width:100%;
-}#banner2>img{
-width:100%
-}.slide1-img{
+} 
+.slide1-img{
     width:100%;
     height:400px;
     background-position: center;
@@ -251,4 +248,12 @@ justify-content: space-between;
     left:0
 }#next{
     right:0
+}
+
+#bhut{
+    display: grid;
+    
+}
+#bhut img{
+    width: 100%;
 }

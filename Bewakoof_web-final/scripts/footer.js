@@ -1,6 +1,6 @@
 function footer(){
 return `
-<div id="footer-bag">
+<div id="footer-baga">
 <div id="ylogo">
 
  <img src="https://images.bewakoof.com/lib/icon/app-logo.png" alt="">
@@ -8,7 +8,7 @@ return `
 <div id="niche">
 
 
-<div class="footer">
+<div class="footera">
    
     <div>
         <h3>CUSTOMER SERVICE</h3>
@@ -42,7 +42,7 @@ return `
 
 </div>
   
- <div class="footer">
+ <div class="footera">
             <div>
                 <p>15 Day return policy</p>
                 <p>Cash on delivery</p>
@@ -65,8 +65,8 @@ return `
             <div></div>
         </div>
 
-  <hr id="hr">
-  <div class="footer">
+  <hr id="hawa">
+  <div class="footera">
     <div>
         <h4>MEN'S CLOTHING</h4>
         <p> Men's New Arrivals</p>
