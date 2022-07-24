@@ -64,44 +64,34 @@
 
 
 </body>
+
+</html>
 <script type="module">
 
 
     import{navbar} from "./scripts/navbar.js"
         document.getElementById("container").innerHTML=navbar();
-</script>
-</html>
-<script>
 
-    let u=JSON.parse(localStorage.getItem("uname"));
+        let u=JSON.parse(localStorage.getItem("uname"));
     
-    let arr=JSON.parse(localStorage.getItem("users"));
-    // document.getElementById("button").addEventListener("click", login);
+    let arr=JSON.parse(localStorage.getItem("B-user"));
+    document.getElementById("button").addEventListener("click", login);
 
-    function userlogin(event){
-        event.preventDefault();
-        
+    function login(){
         arr.forEach(function(el){
-            let mobile =document.getElementById("input").value;
-            console.log(el.name)
-          if(el.mobile==mobile){
-           //alert("Login Success")
-            localStorage.setItem("uname",JSON.stringify(el));
-            document.getElementById("apnd").innerHTML=el.name;
+          if(el.mobile==document.getElementById("input").value){
+           
+            localStorage.setItem("uname",JSON.stringify(el))
 
-        }
-        else{
-            //alert("worng Credentials")
-        }
+           
+          }
           
 
         })
-       // window,location.reload();
+        window.location.reload();
         
     }
    
-   
-   
-   
-    
+document.getElementById("apnd").innerHTML=u.name;
+
 </script>

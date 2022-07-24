@@ -61,6 +61,7 @@
 <script type="module">
 import{navbar} from "./scripts/navbar.js"
     document.getElementById("container").innerHTML=navbar()
+ 
     let arr=JSON.parse(localStorage.getItem("B-user"))||[];
     document.getElementById("butn").addEventListener("click", signup);
   
@@ -71,29 +72,15 @@ import{navbar} from "./scripts/navbar.js"
         mobile:form.mobile.value,
         email:form.email.value,
         password:form.password.value,
-       
-
        }
-       if(obj.name==""||obj.mobile==""||obj.email==""||obj.password==""){
-            
+       arr.push(obj)
+       alert("SignUp Success" )
+       
         localStorage.setItem("B-user",JSON.stringify(arr));
-        alert("Please fill all info!")
-       document.getElementById("alrt").innerHTML="Opps!";
-       document.getElementById("alrt").style.color="red";
-      
+        window.location.href="index.html"
+         
        }
-       else{ 
-        arr.push(obj);
-       
-       window.location.href="login.html"
+
       
-       }
-       
-       
-
-     }
-
-    
-    
-
 </script>
+ 
