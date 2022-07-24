@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart_product.css">
+    <link rel="stylesheet" href="common.css">
+   
+    <title>Document</title>
+    <style>
+         #main_body{
+            margin-top: 150px;
+            margin-bottom: 150px;
+            width: 100%;
+            /* border: 1px solid; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <div id="main_body">
+        <h1> Showing cart Items </h1>
+    
+    <div id="cart_value">
+        <!-- <div>
+            <img src="" alt="">
+        </div> -->
+    </div>
+    </div>
+    <div id="ifooter"></div>
+</body>
+<script type="module">
+    import{navbar} from "./scripts/navbar.js"
+        document.getElementById("container").innerHTML=navbar()
+        import{footer} from "./scripts/footer.js"
+        document.getElementById("ifooter").innerHTML=footer()
+    
+    
+    
+     </script>
+
+</html>
+<script>
+    let data = JSON.parse(localStorage.getItem("cart_product"));
+    console.log(data);
+        let product_arr=[];
+    let append_product= (ele)=>{
+        
+        console.log(ele);
+        let container = document.getElementById("cart_value");
+        let image = document.createElement("img");
+        image.src = ele.image;
+        image.setAttribute("id","main_image")
+        
+        let name = document.createElement("p");
+        name.innerText= ele.title;
+        name.setAttribute("id","title");
+
+        let des = document.createElement("p");
+        des.innerText = ele.description;
+        des.setAttribute("class","desc");
+
+        let price = document.createElement("h3");
+        price.innerText = ele.price;
+
+       
+
+        let rating = document.createElement("p");
+        rating.innerText = `${ele.rating}☆`;
+         rating.setAttribute("class","desc");
+        
+         let div2 = document.createElement("div");
+         div2.setAttribute("id", "div2");
+
+         let extra_img = document.createElement("img");
+         extra_img.src = "https://images.bewakoof.com/uploads/manufacturer_brand/Woakers-1637767685.jpeg";
+        let p = document.createElement('p');
+        p.innerText ="Woakers is a partner brand on Bewakoof";
+        
+        
+        div2.append(extra_img,p);
+        let  btn_logo = document.createElement("img");
+        
+        let p2 = document.createElement("p");
+        p2.innerText = "Tribe Members get an extra discount of 40rs.and free shipping.";
+
+        let size = document.createElement("h4");
+        size.innerText= "SELECT SIZE ";
+
+       let size_div= document.createElement("div");
+       size_div.setAttribute("id","size_div");
+
+       let div1 = document.createElement("div");
+        div1.innerText="UK6";
+
+        let div3 = document.createElement("div");
+        div3.innerText = "UK7";
+
+        let div4 = document.createElement("div");
+        div4.innerText = "UK8";
+        
+        let div5 = document.createElement("div");
+        div5.innerText = "UK9";
+        
+        let div6 = document.createElement("div");
+        div6.innerText = "UK10";
+        
+       size_div.append(div1,div3,div4,div5,div6)
+
+        let btn_div = document.createElement("div");
+        let btn = document.createElement("button");
+        btn.innerText = `Add To Bag`;
+        btn.setAttribute("id","btn");
+       
+        let btn3 = document.createElement("button");
+        btn3.innerText = `Add To Bag`;
+        btn3.setAttribute("class","btn");
+        
+        btn.addEventListener("click",function(){
+           btn.setAttribute("class","btn");
+            
+            btn3.setAttribute("class","active");
+            btn3.innerText="Go To Bag";
+            product_arr.push(ele);
+            localStorage.setItem("bagData",JSON.stringify(product_arr));
+            cart(ele);
+            console.log("In");
+            btn3.addEventListener("click",function(){
+                next_page();
+            });
+           
+        })
+
+        let btn2 = document.createElement("button");
+        btn2.innerText =`WISHLIST`;
+        btn2.setAttribute("id","btn2");
+        btn2.addEventListener("click",function(){
+            window.location.href="wishlist.html";
+        })
+
+        btn_div.append(btn,btn2,btn3);
+
+        let div = document.createElement("div");
+        div.setAttribute("id", "ct_pr");
+
+        let div_img = document.createElement("div");
+        div_img.setAttribute("id","pr_img");
+
+        div_img.append(image);
+
+        div.append(name,des,price,rating,div2,size, size_div, btn_div);
+        container.append(div_img,div);
+
+    }
+    append_product(data);
+    let cart = (ele)=>{
+        console.log(ele)
+    }
+    let next_page =()=>{
+        console.log("Function working");
+        alert("you need to Signup first");
+        window.location.href="Signup.html";
+    }
+</script>

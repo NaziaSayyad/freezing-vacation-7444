@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./cart.css">
+    <script src="https://kit.fontawesome.com/0ede75ce99.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="cartdata()">
+    <div id="navbar"></div>
+    <p class="bagCount" id="bagCount"></p>
+    <div id="headerdiv"></div> 
+    <div class="main">
+        <div id="cartItems" class="cartitems"></div>
+        <div class="sidebar">
+            <div class="tribeofr">
+                <p>Save extra ₹110 with TriBe</p>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="cash">
+                <p class="cashback">Whistles! Get extra 10% Cashback on prepaid orders above Rs.699. Coupon code - HAPPY10.</p>
+            </div>
+            <div class="border">
+                <div class="coupon">
+                    <p class="coupontext">Have a Coupon / Referral / Gift Card ?
+                        Redeem</p>
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
+                <div class="pricediv">
+                    <p class="price"><b>PRICE SUMMARY</b></p>
+                </div>
+                <table>
+                    <tr>
+                        <td>Total MRP (Incl. of taxes)</td>
+                        <td id="totalPrice"></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Fee</td>
+                        <td>FREE</td>
+                    </tr>
+                    <tr>
+                        <td>Bag Discount</td>
+                        <td id="discount"></td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td id="topay"></td>
+                    </tr>
+                </table>
+                <div class="savediv">
+                    <p id="savings"></p>
+                </div>
+                <div class="checkoutdiv">
+                    <div class="checkoutvalue">
+                        <p>Total</p>
+                        <p id="cartvalue"></p>
+                    </div>
+                    <button class="checkout">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="container"></div>
+        <div id="wishlist" class="wishlist"></div>
+        
+    
+</body>
+<script src="./cart.js"></script>
+</html>

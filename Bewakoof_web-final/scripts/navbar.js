@@ -182,7 +182,7 @@ function navbar(){
     <div class="account">
         <a href="login.html" id="apnd">Login</a>
         <a href=""><i class="fa-solid fa-heart"></i></a>
-        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
     </div>
   </div>
 

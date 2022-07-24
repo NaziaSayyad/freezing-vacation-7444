@@ -305,14 +305,14 @@ let slider=tns({
   document.querySelector(".my-slider1").addEventListener("click",nextpage)
   function nextpage(){
    
-      window.location.href="accessories.html"
+      window.location.href="men.html"
     
     
   }
   document.querySelector(".my-slider").addEventListener("click",nextpage1)
   function nextpage1(){
    
-      window.location.href="accessories.html"
+      window.location.href="men.html"
     
     
   }

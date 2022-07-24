@@ -7,6 +7,11 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0ede75ce99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="common.css">
+    <style>
+        #apnd{
+            color: black;
+        }
+    </style>
 </head>
 <style>
 
@@ -36,7 +41,7 @@
          <div class="shead">
 
             <input type="text" id="input" placeholder="Enter Mobile Number">
-            <button id="button">CONTINUE</button>
+            <button id="button" onclick="userlogin(event)">CONTINUE</button>
  
            <hr> OR
  
@@ -56,34 +61,45 @@
  
 
     </div>
+
+
 </body>
-</html>
 <script type="module">
 
 
-import{navbar} from "./scripts/navbar.js"
-    document.getElementById("container").innerHTML=navbar()
+    import{navbar} from "./scripts/navbar.js"
+        document.getElementById("container").innerHTML=navbar();
+</script>
+</html>
+<script>
+
     let u=JSON.parse(localStorage.getItem("uname"));
     
-    let arr=JSON.parse(localStorage.getItem("B-user"));
-    document.getElementById("button").addEventListener("click", login);
+    let arr=JSON.parse(localStorage.getItem("users"));
+    // document.getElementById("button").addEventListener("click", login);
 
-    function login(){
+    function userlogin(event){
+        event.preventDefault();
+        
         arr.forEach(function(el){
-          if(el.mobile==document.getElementById("input").value){
-           alert("Login Success")
-            localStorage.setItem("uname",JSON.stringify(el))
+            let mobile =document.getElementById("input").value;
+            console.log(el.name)
+          if(el.mobile==mobile){
+           //alert("Login Success")
+            localStorage.setItem("uname",JSON.stringify(el));
+            document.getElementById("apnd").innerHTML=el.name;
 
-           
-          }
+        }
+        else{
+            //alert("worng Credentials")
+        }
           
 
         })
-        window,location.reload();
+       // window,location.reload();
         
     }
    
-document.getElementById("apnd").innerHTML=u.name;
    
    
    
