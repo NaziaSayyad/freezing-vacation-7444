@@ -30,7 +30,7 @@
         
         }
         #beta a:hover{
-            border-bottom: 6px solid #fdd835 ;
+            border-bottom: 4px solid #fdd835 ;
             transition:none;
             height:100%;
         }
