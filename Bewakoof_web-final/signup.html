@@ -67,6 +67,8 @@ import{navbar} from "./scripts/navbar.js"
   
      function signup(){
 
+        window.location.href="login.html"
+        
       let obj={
         name:form.name.value,
         mobile:form.mobile.value,
@@ -77,9 +79,10 @@ import{navbar} from "./scripts/navbar.js"
        alert("SignUp Success" )
        
         localStorage.setItem("B-user",JSON.stringify(arr));
-        window.location.href="index.html"
+        // window.location.href="login.html"
          
        }
+
 
       
 </script>

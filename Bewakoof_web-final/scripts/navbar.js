@@ -195,7 +195,7 @@ function navbar(){
 
 <div id="beta">
 <a href="index.html">MEN</a>
-<a href="">WOMEN</a>
+<a href="womens.html">WOMEN</a>
 <a href="acc.html">ACCESSORIES</a>
 
 </div>
